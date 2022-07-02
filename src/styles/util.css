@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --primary-color-1: #fa4a84;
+  --primary-color-2: #7e51ff;
+  --primary-color-3: #1b003b;
+  --white-color: #ffffff;
+  --grey-color: #8397ab;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color-1);
+}

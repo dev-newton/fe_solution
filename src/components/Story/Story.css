@@ -1,0 +1,16 @@
+.step {
+  display: flex;
+  gap: 4px;
+}
+
+.step_item {
+  border: none;
+  border-top: 2px solid var(--white-color);
+  border-radius: 1px;
+  width: 56px;
+  opacity: 0.4;
+}
+
+.step_item.active {
+  opacity: 1;
+}

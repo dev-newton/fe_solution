@@ -1,0 +1,43 @@
+.sidebar {
+  width: 358px;
+  height: auto;
+  padding: 32px;
+  color: var(--white-color);
+}
+
+.bg1 {
+  background-color: var(--primary-color-2);
+}
+
+.bg2 {
+  background-color: var(--primary-color-3);
+}
+
+.sidebar .step {
+  margin: 52px 0 56px;
+}
+
+.sidebar_header h2 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 2px;
+  width: 218px;
+}
+
+.sidebar_header p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  width: 234px;
+}
+
+.sidebar .img_box_wrapper {
+  margin: 118px 0 140px;
+}
+
+.sidebar .copyright {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}

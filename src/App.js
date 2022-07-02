@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
-function App() {
+import Signup1 from "./pages/Signup/Signup1";
+import Signup2 from "./pages/Signup/Signup2";
+import Signin from "./pages/Signin/Signin";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Dashboard from "./pages/Dashboard/Dashboard";
+
+import "./styles/style.css";
+import "./styles/util.css";
+
+const App = () => {
+  const location = useLocation();
+  const checkPathname = (pathname) => location.pathname.includes(pathname);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigate to="/signup_1" />} />
+      <Route
+        path="/"
+        element={
+          <Sidebar background={checkPathname("signup") ? "bg1" : "bg2"} />
+        }
+      >
+        <Route path="signup_1" element={<Signup1 />} />
+        <Route path="signup_2" element={<Signup2 />} />
+        <Route path="signin" element={<Signin />} />
+      </Route>
+      <Route path="/dashboard" element={<Sidebar background="bg1" />}>
+        <Route path="/dashboard/home" element={<Dashboard />} />
+      </Route>
+    </Routes>
   );
-}
+};
 
 export default App;
