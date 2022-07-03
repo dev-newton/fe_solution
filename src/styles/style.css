@@ -50,11 +50,6 @@
   margin: 28px 0 32px;
 }
 
-.signup .form_group {
-  position: relative;
-  height: 44px;
-}
-
 .signup .form_row {
   display: flex;
   gap: 12px;
@@ -80,105 +75,4 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.input,
-.select {
-  background: #f4f8fb;
-  border: none;
-  height: 44px;
-  padding: 0 16px;
-  border-bottom: 1px solid #e0e2ec;
-  font-size: 14px;
-  color: var(--primary-color-3);
-  transition: border-color 0.2s ease;
-}
-
-.select {
-  padding-top: 19px;
-  -moz-appearance: none; /* Firefox */
-  -webkit-appearance: none; /* Safari and Chrome */
-  appearance: none;
-}
-
-.input:focus {
-  outline: none;
-  border-width: 2px;
-  border-image: linear-gradient(
-    270deg,
-    #00d2ff -8.34%,
-    var(--primary-color-2) 50.93%,
-    var(--primary-color-1) 106.85%
-  );
-  border-image-slice: 1;
-}
-
-.input.md,
-.select.md {
-  width: 375px;
-}
-
-.input.sm,
-.select.sm {
-  width: 263px;
-}
-
-.input.xs,
-.select.xs {
-  width: 100px;
-}
-
-.label {
-  display: block;
-  font-size: 12px;
-}
-
-.signup .form_group span.country_text {
-  position: absolute;
-  top: 7px;
-  left: 16px;
-  font-size: 10px;
-  color: var(--grey-color);
-}
-
-@supports (not (-ms-ime-align: auto)) {
-  label {
-    color: var(--grey-color);
-    transform: translate(0, -2.2rem);
-    transition: all 0.2s ease-out;
-    padding: 7px 0 0 16px;
-  }
-
-  .input:not(:placeholder-shown) {
-    padding-top: 19px;
-  }
-
-  .input:focus + label {
-    color: var(--primary-color-1);
-  }
-
-  .input:focus + label,
-  .input:not(:placeholder-shown) + label {
-    transform: translate(0, -44px);
-    font-size: 10px;
-  }
-}
-
-.btn {
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
-  text-align: center;
-}
-
-.btn_md {
-  width: 375px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.btn_primary {
-  background-color: var(--primary-color-1);
-  color: var(--white-color);
 }

@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import Box from "../../components/Box/Box";
 import backImg from "../../assets/images/Group 11.png";
+import Button from "../../components/Button/Button";
 
 const Signup2 = () => {
   const [box, setBox] = useState(1);
@@ -73,7 +74,7 @@ const Signup2 = () => {
               ]}
             />
           </div>
-          <button className="btn btn_primary btn_md">Next</button>
+          <Button color="btn_primary" size="btn_md" label="Next" />
         </form>
       </div>
     </div>
